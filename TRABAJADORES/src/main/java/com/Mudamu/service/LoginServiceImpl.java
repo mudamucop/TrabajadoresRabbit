@@ -1,22 +1,17 @@
 package com.Mudamu.service;
 
+import com.Mudamu.model.CitasMedico;
+import com.Mudamu.model.Medico;
+import com.Mudamu.model.Predicciones;
+import com.Mudamu.rest.CitaRESTClient;
+import com.Mudamu.rest.PrediccionRESTClient;
+import com.Mudamu.rest.UserRESTClient;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-
-import com.Mudamu.model.CitasMedico;
-import com.Mudamu.model.Medico;
-import com.Mudamu.model.Prediccion;
-import com.Mudamu.model.Predicciones;
-import com.Mudamu.rest.CitaRESTClient;
-import com.Mudamu.rest.PrediccionRESTClient;
-import com.Mudamu.rest.UserRESTClient;
 
 @Service
 public class LoginServiceImpl implements LoginService{
